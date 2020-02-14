@@ -61,6 +61,7 @@ clear
 #
 
 pe 'yum -y install bash-completion'
+wait
 cmd
 wait
 clear
@@ -89,7 +90,7 @@ clear
 pe 'systemd-run --wait curl https://confluent.io'
 pe 'systemd-run curl https://confluent.io'
 cmd
-pe 'systemd-run -p User=cp-kafka' --wait curl https://confluent.io'
+pe 'systemd-run -p User=cp-kafka --wait curl https://confluent.io'
 wait
 clear
 
