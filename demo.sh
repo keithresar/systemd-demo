@@ -102,9 +102,9 @@ clear
 ##      timers
 #
 
-pe 'systemctl car sleepy.service'
+pe 'systemctl cat sleepy.service'
 pe 'systemctl cat sleepy.timer'
-pe 'systemctl list-jobs'
+pe 'systemctl list-timers'
 wait
 clear
 
